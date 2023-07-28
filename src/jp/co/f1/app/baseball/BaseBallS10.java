@@ -119,6 +119,7 @@ public class BaseBallS10 {
 	private int countNumberOfStrikes() {
 		int strike = 0;
 		for (int i = 0; i < 3; i++) {
+			// 同じ桁の数字が同じの場合、strike++
 			if (playerArray[i] == randomArray[i]) {
 				strike++;
 			}
